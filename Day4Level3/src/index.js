@@ -1,17 +1,40 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const styleC = {
+  display:'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  textAlign:'center',
+  margin: '5px 20px',
+  borderRadius: '10px'
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const cajasC = (
+  <>
+  <div style= {{...styleC, backgroundColor: '#518cef'}}>
+    <p>#518cef</p>
+  </div>
+  <div style= {{...styleC, backgroundColor: '#3b10c4'}}>
+    <p>#3b10c4</p>
+  </div>
+  <div style= {{...styleC, backgroundColor: '#9aede6'}}>
+    <p>#9aede6</p>
+  </div>
+  <div style= {{...styleC, backgroundColor: '#8ee763'}}>
+    <p>#8ee763</p>
+  </div>
+  <div style= {{...styleC, backgroundColor: '#a30dd0'}}>
+    <p>#a30dd0</p>
+  </div>
+  </>
+)
+
+const app = (
+  <div className='app'>
+      {cajasC}
+  </div>
+)
+const rootElement = document.getElementById('root');
+
+ReactDOM.render(app, rootElement)
