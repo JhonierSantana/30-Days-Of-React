@@ -53,13 +53,13 @@ const info ={
 const icons = (
   <div style={Container}>
     <img src={htmlImage} alt="Icono de HTML" style={imgStyle}/>
-    <img src={cssImage} alt="Icono de HTML" style={imgStyle}/>
-    <img src={jsImage} alt="Icono de HTML" style={imgStyle}/>
-    <img src={reactImage} alt="Icono de HTML" style={imgStyle}/>
+    <img src={cssImage} alt="Icono de CSS" style={imgStyle}/>
+    <img src={jsImage} alt="Icono de JS" style={imgStyle}/>
+    <img src={reactImage} alt="Icono de React" style={imgStyle}/>
   </div>
 );
 const formS = (
-  <div style={containerStyle}>
+<div style={containerStyle}>
   <div>
     <h1 style={info}>Suscribe</h1>
     <p>Sign up with your email address to receive news and updates.</p>
