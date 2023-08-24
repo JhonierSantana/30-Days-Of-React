@@ -2,6 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 
+const styleC = {
+    display: 'inline-block',
+    width: '110px',
+    height: '110px',
+    textAlign: 'center',
+    lineHeight: '100px',
+    margin:' 1px',
+    fontSize: '30px',
+    fontWeight: 'bold',
+  }
+
 const Header = (
     <div>
       <h1 className='text'>30 days Of React</h1>
@@ -46,13 +57,46 @@ const NumberList = () => {
             </div>
         )
     }
-    return <div className='number-container'>{numbers}</div>
+    return <div 
+    className='number-container' style={{ marginBottom: '50px' }}>{numbers}<h1 className='text' style={{marginTop: '30px'}}>Exercise HexaColor</h1></div>;
+
 };
+
+const getRandomHexColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)]
+    }
+    return color;
+}
+
+const HexaColorList = () => {
+    const colorBoxes = [];
+  
+    for (let i = 0; i <= 32; i++) {
+    const color = getRandomHexColor();
+    const colorBoxStyle = {
+        ...styleC,
+        backgroundColor: color,
+        fontSize: '20px', // Agrega el tamaño de fuente aquí
+      };
+      colorBoxes.push(
+        <div key={i} style={colorBoxStyle}>
+          {color}
+        </div>
+      );
+    }
+  
+    return <div className='color-container'>{colorBoxes}</div>;
+  };
+  
 
 const App = ( 
     <div className='app'>
         {Header}
         <NumberList />
+        <HexaColorList />
     </div>
 );
 
