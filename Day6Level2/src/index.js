@@ -79,7 +79,7 @@ const HexaColorList = () => {
     const colorBoxStyle = {
         ...styleC,
         backgroundColor: color,
-        fontSize: '20px', // Agrega el tamaño de fuente aquí
+        fontSize: '20px',
       };
       colorBoxes.push(
         <div key={i} style={colorBoxStyle}>
