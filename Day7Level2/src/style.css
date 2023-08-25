@@ -1,0 +1,42 @@
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.imgStyle {
+    max-width: 200px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.containerStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputContainerStyle {
+    display: flex;
+}
+
+.inputStyle {
+    margin-right: 5px;
+    border-radius: 10px;
+    height: 35px;
+}
+
+.buttonStyle {
+    margin-top: 10px;
+    height: 35px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
